@@ -4,7 +4,9 @@
   "version": "0.1.0",
   "documentation": "https://github.com/dutchtexan25/ha-tailscale-nordvpn-gateway-integration",
   "issue_tracker": "https://github.com/dutchtexan25/ha-tailscale-nordvpn-gateway-integration/issues",
-  "codeowners": [],
+  "codeowners": [
+    "@dutchtexan25"
+  ],
   "config_flow": true,
   "iot_class": "local_polling",
   "requirements": []

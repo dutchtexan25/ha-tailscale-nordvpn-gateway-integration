@@ -22,7 +22,7 @@ The integration does not install another Tailscale or VPN instance and does not 
 3. Search for **Tailscale NordVPN Gateway** and complete setup.
 4. Add the created entities to a dashboard.
 
-If it is not available in the built-in Marketplace, add this public repository as a custom integration repository in **Settings → Marketplace**:
+First add this repository in **Settings → Marketplace → Add from link**. Enter the GitHub URL below, select **Integration** if Home Assistant asks for a type, then open the repository entry and install it. After installation, go to **Settings → Devices & services → Add integration** and search for **Tailscale NordVPN Gateway**:
 
 `https://github.com/dutchtexan25/ha-tailscale-nordvpn-gateway-integration`
 

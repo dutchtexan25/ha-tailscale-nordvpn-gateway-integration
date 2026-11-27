@@ -72,8 +72,17 @@ class GatewayApi:
         return await self._request("GET", f"/addons/{self.app_slug}/info")
 
     async def set_options(self, values: dict[str, Any]) -> None:
+        """Merge changes into the complete current add-on options."""
+        info = await self.get_info()
+        current = info.get("options")
+        if not isinstance(current, dict) or not current:
+            raise GatewayApiError(
+                "Cannot safely update gateway options: Supervisor did not return "
+                "the current add-on options"
+            )
+        merged = {**current, **values}
         await self._request(
-            "POST", f"/addons/{self.app_slug}/options", json={"options": values}
+            "POST", f"/addons/{self.app_slug}/options", json={"options": merged}
         )
 
     async def restart(self) -> None:

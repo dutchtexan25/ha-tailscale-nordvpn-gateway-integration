@@ -1,7 +1,7 @@
 {
   "domain": "tailscale_nordvpn_gateway",
   "name": "Tailscale NordVPN Gateway",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "documentation": "https://github.com/dutchtexan25/ha-tailscale-nordvpn-gateway-integration",
   "issue_tracker": "https://github.com/dutchtexan25/ha-tailscale-nordvpn-gateway-integration/issues",
   "codeowners": [
